@@ -1080,3 +1080,167 @@ h2,
     text-align: right;
     font-size: 0.86rem;
 }
+
+/* ===== Suggestions Section ===== */
+.suggestions-section {
+  padding: 80px 24px;
+  background: #f8f3ed;
+  color: #292321;
+}
+
+.suggestions-container {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.suggestions-section .section-eyebrow {
+  margin-bottom: 12px;
+  color: #172747;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.suggestions-section h2 {
+  margin: 0 0 16px;
+  color: #172747;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  text-align: center;
+}
+
+.suggestions-intro {
+  max-width: 520px;
+  margin: 0 auto 36px;
+  color: #625956;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.suggestions-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.suggestions-container label {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.suggestions-container label span {
+  color: #807571;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.suggestions-container input,
+.suggestions-container select,
+.suggestions-container textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ded2cb;
+  border-radius: 10px;
+  background: #fffdfb;
+  color: #292321;
+  font: inherit;
+}
+
+.suggestions-container textarea {
+  resize: vertical;
+}
+
+.suggestions-container input:focus,
+.suggestions-container select:focus,
+.suggestions-container textarea:focus {
+  border-color: #172747;
+  outline: 2px solid #17274733;
+}
+
+.suggestions-container button {
+  align-self: flex-start;
+  margin-top: 14px;
+  padding: 14px 26px;
+  border: none;
+  border-radius: 10px;
+  background: #172747;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.suggestions-container button:hover {
+  background: #101B32;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .suggestions-section {
+    padding: 56px 18px;
+  }
+
+  .suggestions-container button {
+    width: 100%;
+  }
+}
+
+/* Faroukian Hub navigation colors */
+nav a {
+  transition: color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: #F3DF8A;
+}
+
+/* ===== The Faroukian Hub brand ===== */
+:root {
+  --hub-navy: #172747;
+  --hub-navy-dark: #101B32;
+  --hub-butter: #F3DF8A;
+}
+
+/* Navigation hover */
+.navbar nav a {
+  transition: color 0.2s ease;
+}
+
+.navbar nav a:hover,
+.navbar nav a:focus-visible {
+  color: var(--hub-butter);
+}
+
+/* Suggestions section */
+.suggestions-section {
+  background: #f8f3ed;
+  color: var(--hub-navy);
+}
+
+.suggestions-section .section-eyebrow {
+  color: var(--hub-navy);
+}
+
+.suggestions-section h2 {
+  color: var(--hub-navy);
+}
+
+.suggestions-container button {
+  background: var(--hub-navy);
+}
+
+.suggestions-container button:hover {
+  background: var(--hub-navy-dark);
+}
+
+/* Main brand logo */
+.navbar .logo {
+  color: var(--hub-navy);
+}
+
+.navbar .logo span {
+  color: var(--hub-navy);
+}
