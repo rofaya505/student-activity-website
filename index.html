@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Our Space | Student Activity</title>
+	<title>The Faroukian Hub | Student Activity</title>
 	<link rel="stylesheet" href="our-space-style.css">
 <script src="gallery-data.js" defer></script>
 <script src="our-space-script.js" defer></script>
@@ -11,15 +11,18 @@
 
 <body>
 	<header class="navbar">
-		<a href="#home" class="logo">our<span>space.</span></a>
+		<a href="#home" class="logo">The <span>Faroukian Hub.</span></a>
 
-		<nav>
-			<a href="#about">About</a>
-			<a href="#team">Our Team</a>
-			<a href="#gallery">Gallery</a>
-			<a href="#yearbook">Yearbook</a>
-			<a href="#shop">Merch</a>
-		</nav>
+		
+<nav>
+    <a href="#about">About</a>
+    <a href="#team">Our Team</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#yearbook">Yearbook</a>
+    <a href="#shop">Merch</a>
+    <a href="#suggestions">Suggestions</a>
+</nav>
+
 
 		<a class="nav-cta" href="#shop">Get your merch</a>
 	</header>
@@ -74,6 +77,50 @@
 				</div>
 			</div>
 		</section>
+
+		
+<section id="suggestions" class="suggestions-section">
+  <div class="suggestions-container">
+    <p class="section-eyebrow">YOUR VOICE MATTERS</p>
+    <h2>Got an idea?</h2>
+    <p class="suggestions-intro">
+      Have a suggestion for The Faroukian Hub? We'd love to hear it.
+      Share your ideas and help us make things better.
+    </p>
+
+    <form action="https://formspree.io/f/meaaopaq" method="POST">
+      <label for="suggestion-name">Your name <span>(optional)</span></label>
+      <input
+        type="text"
+        id="suggestion-name"
+        name="name"
+        placeholder="You can leave this blank"
+      >
+
+      <label for="suggestion-category">Suggestion category</label>
+      <select id="suggestion-category" name="category" required>
+        <option value="" disabled selected>Choose a category</option>
+        <option value="Events">Events</option>
+        <option value="Activities">Activities</option>
+        <option value="Website">Website</option>
+        <option value="Merchandise">Merchandise</option>
+        <option value="Other">Other ideas</option>
+      </select>
+
+      <label for="suggestion-message">Your suggestion</label>
+      <textarea
+        id="suggestion-message"
+        name="suggestion"
+        rows="5"
+        placeholder="Tell us what's on your mind..."
+        required
+      ></textarea>
+
+      <button type="submit">Send suggestion</button>
+    </form>
+  </div>
+</section>
+
 
 		<section class="intro section-pad" id="about">
 			<div>
@@ -356,7 +403,7 @@
 			<div class="product-grid">
 				<article class="product-card">
 					<div class="product-art product-shirt">
-						<span>OUR SPACE</span>
+						<span>The Faroukian Hub</span>
 						<p>CLASS OF<br>2028</p>
 					</div>
 					<div class="product-info">
@@ -374,7 +421,7 @@
 
 				<article class="product-card">
 					<div class="product-art product-hoodie">
-						<span>OUR SPACE</span>
+						<span>The Faroukian Hub</span>
 						<p>GOOD<br>COMPANY.</p>
 					</div>
 					<div class="product-info">
@@ -421,6 +468,8 @@
 		<a href="#home" class="logo">our<span>space.</span></a>
 		<p>Made with ideas, teamwork, and a little bit of chaos.</p>
 		<p>Juniors of 2027 · Seniors of 2028 | Student Activity</p>
+	
+
 	</footer>
 </body>
 </html>
